@@ -14,6 +14,8 @@ namespace cordite {
 	process* getProcess(const unsigned int id);
 	void addProcess(process* newProcess);
 	const unsigned int getNewWindowID();
+	const dim2di getDimensions() const;
+	void setDimensions(const dim2di d);
     };
   };
 };
