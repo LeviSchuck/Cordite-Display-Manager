@@ -48,7 +48,7 @@ namespace cordite {
 	KEY_KEY_7,
 	KEY_KEY_8,
 	KEY_KEY_9,
-	KEY_KEY_A = 0x97,
+	KEY_KEY_A = 0x61,
 	KEY_KEY_B,
 	KEY_KEY_C,
 	KEY_KEY_D,
