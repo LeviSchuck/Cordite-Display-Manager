@@ -18,6 +18,7 @@ namespace cordite {
       virtual const unsigned int getNewWindowID() = 0;
       virtual const dim2di getDimensions() const = 0;
       virtual void setDimensions(const dim2di d) = 0;
+      virtual void passMouse(dim2di pos)=0;
     };
   };
 }

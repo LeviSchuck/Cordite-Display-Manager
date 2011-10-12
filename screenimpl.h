@@ -16,6 +16,7 @@ namespace cordite {
 	const unsigned int getNewWindowID();
 	const dim2di getDimensions() const;
 	void setDimensions(const dim2di d);
+	void passMouse(dim2di pos);
     };
   };
 };

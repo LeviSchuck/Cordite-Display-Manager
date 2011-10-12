@@ -40,6 +40,9 @@ namespace cordite {
       throw "You need to implement setDimensions!";
       
     }
+    void screenImpl::passMouse(dim2di pos){
+      throw "You need to implement passMouse!";
+    }
 
 
 
