@@ -24,7 +24,7 @@ namespace cordite {
       parent = 0;
     }
     process::~process(){
-      throw "You need to implement this!";
+      throw "You need to implement deconstructor!";
     }
 
 
