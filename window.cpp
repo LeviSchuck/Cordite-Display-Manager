@@ -52,6 +52,10 @@ namespace cordite {
       throw "You need to implement setFocus!";
       throw "Make this thread safe.";
     }
+    const bool window::isTask() const{
+      return true;
+    }
+
 
   };
 };
