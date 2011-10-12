@@ -5,6 +5,7 @@ namespace cordite {
     class screen;
     class process;
     class factory{
+    public:
       static screen* createScreen();
     };
   };
