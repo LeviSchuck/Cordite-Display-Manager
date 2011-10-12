@@ -2,6 +2,7 @@
 #define CORDITE_SCREEN_H
 #include <map>
 #include "events.h"
+#include "dim2d.h"
 struct SDL_Surface;
 namespace cordite {
   namespace dm {
@@ -15,6 +16,8 @@ namespace cordite {
       virtual process* getProcess(const unsigned int id) = 0;
       virtual void addProcess(process* newProcess) = 0;
       virtual const unsigned int getNewWindowID() = 0;
+      virtual const dim2di getDimensions() const = 0;
+      virtual void setDimensions(const dim2di d) = 0;
     };
   };
 }
