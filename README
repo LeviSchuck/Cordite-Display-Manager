@@ -1,0 +1,12 @@
+This is a cmake project.
+I suggest doing something like
+
+mkdir build
+cd build
+cmake ../
+make
+
+Currently this project is not implemented. 
+If you wish to implement it, please fork it, and make your appropriate changes. 
+When you think your changes are ready, send a pull request.
+
