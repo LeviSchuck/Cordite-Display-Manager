@@ -12,7 +12,7 @@ namespace cordite {
     class window{
       friend class process; 
       friend class screen;
-    private:
+    protected:
       unsigned int id;
       dim2di dim;
       typedef std::pair<unsigned long int,events::eventList> eventsWithTime;

@@ -10,6 +10,7 @@ namespace cordite {
     class process {
       friend class screen;
       friend class factory;
+    protected:
       std::vector<window*> windows;
       unsigned int id;
       screen* parent;
