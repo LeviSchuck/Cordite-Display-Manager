@@ -55,6 +55,9 @@ namespace cordite {
     const bool window::isTask() const{
       return true;
     }
+    const bool window::allowsFocus() const{
+      return true;
+    }
 
 
   };

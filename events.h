@@ -1,14 +1,36 @@
+/*! \mainpage This project needs implementation.
+ * Its goal is to allow game developers to have a portable interface
+ * which provides a basic computer interface, not some overly fancy
+ * email program that takes up the entire screen.
+ *
+ * It should be able to support small one-window screens to theoretically 16K+ windows
+ *
+ * Windows are only capturing objects. It is the processes, which can house multiple
+ * windows which process all the events and draw back on the SDL_Surface
+ *
+ * A conceptual slideshow with images and all is at http://engine.corditestudios.com/dm/
+ *
+ */
 #ifndef CORDITE_EVENTS
 #define CORDITE_EVENTS
 #include <vector>
 namespace cordite {
   namespace dm {
     namespace events {
+      /*! \enum General button event
+       * 
+       * Just general button events.
+       */
       enum E_TYPE {
 	PRESS,
 	RELEASE,
 	HOLD
       };
+      /*! \enum Each key/button is enumerated here
+       * 
+       * Some of the keys are mapped to their actual char equiv, but don't depend on that in case things need to be reorganized.
+       * A key event should always come with this.
+       */
       enum E_KEY {
 	KEY_NULL,
 	KEY_LMOUSE,
@@ -111,12 +133,19 @@ namespace cordite {
 	KEY_PERIOD,
 	KEY_QUOTE
       };
+      /*! \brief a information pair for an event
+       * Holds the kind of event and the key associated
+       */
       struct eventBase {
 	E_TYPE kind;
 	E_KEY key;
       };
+      /*! \brief holds a collection of the eventBase for the client to process
+       * This should be forwarded to any clients which are focused when the event is not used by the manager for things like dragging.
+       */
       struct eventList {
 	std::vector<eventBase> events;
+	//!is true when it has events
 	bool hasEvents;
       };
     };

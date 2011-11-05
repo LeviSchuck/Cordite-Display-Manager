@@ -1,5 +1,9 @@
 #ifndef DIMENSION_2D
 #define DIMENSION_2D
+/*! \brief A 2D couple of numbers
+ * 
+ * Just a general 2D struct, meant for primitives like ints, floats, doubles, longs.
+ */
 template<class T>
 struct dim2d {
  T x;
@@ -9,5 +13,6 @@ struct dim2d {
    y = _y;
   }
 };
+//! integer pair
 typedef dim2d<int> dim2di;
 #endif

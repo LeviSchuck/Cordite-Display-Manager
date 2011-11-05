@@ -4,6 +4,9 @@ namespace cordite {
   namespace dm {
     class screen;
     class process;
+    /*! \brief Instantiates a screen
+     * Instantiates the implemented screen interface
+     */
     class factory{
     public:
       static screen* createScreen();
